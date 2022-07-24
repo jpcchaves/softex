@@ -1,4 +1,0 @@
-setInterval(() => {
-  let segs = 10;
-  console.log(`A bomba irá explodir em ${segs--} segundos`);
-}, 1000);
