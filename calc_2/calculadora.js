@@ -35,6 +35,15 @@ btn.addEventListener("click", (e) => {
   };
 
   function calculadora(num1, num2, operacao) {
+    // validation
+    if (
+      typeof num1 != "number" ||
+      typeof num2 != "number" ||
+      typeof operacao != "number"
+    ) {
+      return (res.innerHTML = `Por favor, insira uma operação válida!`);
+    }
+
     if (operacao >= 0 && operacao <= 3) {
       switch (operacao) {
         case 0:
